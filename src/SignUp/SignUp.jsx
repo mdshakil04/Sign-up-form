@@ -10,7 +10,7 @@ import SignUpFrom from "./SignUpFrom";
 const SignUp = () => {
   const [showSignUpFrom, setShowSignUpFrom] = useState(false);
   const [showAnotherButton, setShowAnotherButton] = useState(true);
-  
+
   const handleSignUpButtonClick = () => {
     setShowSignUpFrom(true);
     setShowAnotherButton(false);

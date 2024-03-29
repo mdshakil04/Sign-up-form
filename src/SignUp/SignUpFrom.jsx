@@ -32,14 +32,14 @@ const SignUpFrom = () => {
   return (
     <div>
       <div className=" flex-col lg:flex-row-reverse">
-        <div className="card shrink-0 w-full max-w-sm ">
-          <form onSubmit={handleSubmit} className="card-body">
+        <div className=" w-full max-w-sm ">
+          <form onSubmit={handleSubmit} className="">
             {/* Email Input Field */}
             <div className="form-control">
               <input
                 type="email" value={email} onChange={handleEmailChange}
                 placeholder="Email"
-                className="input input-bordered rounded-sm"
+                className="input w-full input-bordered rounded-sm  mb-4"
                 // required
               />
               {emailError && <div style={{ color: 'red' }}>{emailError}</div>}
@@ -49,7 +49,7 @@ const SignUpFrom = () => {
               <input
                 type="password" value={password} onChange={handlePasswordChange}
                 placeholder="Password"
-                className="input input-bordered rounded-sm"
+                className="input w-full input-bordered rounded-sm"
                 required
               />
               {passwordError && <div style={{ color: 'red' }}>{passwordError}</div>}
@@ -64,7 +64,7 @@ const SignUpFrom = () => {
               </label>
               <div>
                 {/* Drop Down Container */}
-                <div className="collapse collapse-arrow">
+                <div className=" collapse collapse-arrow">
                     <input type="checkbox" />
                   <div className="collapse-title text-lg">See options</div>
                   <div className="collapse-content">
@@ -76,7 +76,7 @@ const SignUpFrom = () => {
                       <input
                         type="checkbox"
                         defaultChecked
-                        className="checkbox"
+                        className="checkbox "
                       />
                       <p>Yes</p>
                       <input type="checkbox" className="checkbox" disabled />
