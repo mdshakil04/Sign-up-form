@@ -16,7 +16,7 @@ const SignUp = () => {
     setShowAnotherButton(false);
   };
   return (
-    <div className=" flex h-dvh">
+    <div className=" flex h-dvh bg-black">
       <div className=" text-white flex flex-col gap-12 w-1/2 items-center text-center justify-center bg-[#191919]">
         <h1 className="  lg:text-5xl text-center">
           Sign Up <br></br> and come on in
@@ -29,7 +29,7 @@ const SignUp = () => {
           <p>Typeform</p>
         </div>
       </div>
-      <div className=" w-1/2 rounded-l-3xl flex flex-col bg-blue justify-center items-center max-h-full text-center lg:p-32">
+      <div className=" w-1/2 rounded-l-2xl flex flex-col bg-white justify-center items-center max-h-full text-center lg:p-32">
         <div className=" flex justify-center items-center gap-2">
           <img className=" w-1/12" src={logo} alt="" />
           <h1 className=" text-3xl font-bold">Typeform</h1>
@@ -40,7 +40,7 @@ const SignUp = () => {
             & more.
           </p>
         </div>
-        <div className=" lg:mt-12">
+        <div className=" lg:mt-12 ">
           {/* -------------------------------------------------------- */}
           {showAnotherButton && (
             <div className=" flex flex-col">
